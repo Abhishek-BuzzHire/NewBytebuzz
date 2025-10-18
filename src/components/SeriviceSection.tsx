@@ -17,9 +17,9 @@ const ServiceSection = React.forwardRef<HTMLDivElement>((_props, ref) => {
             <h2 className="text-3xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
               Our Core IT Servcies
             </h2>
-            <p className="text-muted-foreground mx-auto max-w-2xl text-lg tracking-tight md:text-xl">
-              We craft digital experiences that captivate and convert, bringing
-              your vision to life.
+            <p className="text-muted-foreground mx-auto max-w-6xl text-lg tracking-tight md:text-xl">
+              We blend technology, creativity, and strategy to craft software that delivers real impact.
+Whether you&apos;re a startup shaping your first product or an enterprise scaling new solutions, we&apos;re here to turn your vision into reality with innovation that lasts.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 md:grid-cols-2">

@@ -59,20 +59,22 @@ const ServicePage = ({ params }: { params: Promise<{ slug: string }> }) => {
                     <div className="max-w-3xl space-y-8 text-left mb-8">
                         {service.sections.map((section, idx) => (
                             <div key={idx} className="space-y-2 lg:mb-16">
-                                <h2 className="text-3xl font-semibold tracking-tight md:text-4xl mb-8">
-                                    {section.heading}
-                                </h2>
-                                {section.content.map((para, i) => (
-                                    para.type === "paragraph" ? (
-                                        <p className="text-semibold text-md" key={i}>{para.text}</p>
-                                    ) : (
-                                        <ul key={i} className="list-disc pl-6 font-semibold space-y-2 text-xl">
-                                            {para.items.map((item, j) => (
-                                                <li key={j}>{item}</li>
-                                            ))}
-                                        </ul>
-                                    )
-                                ))}
+                                <h2 className="text-3xl font-semibold tracking-tight md:text-4xl mb-8" dangerouslySetInnerHTML={{ __html: section.heading }}/>
+                                    
+                                <div className="space-y-4">
+                                    {section.content.map((para, i) => (
+                                        para.type === "paragraph" ? (
+                                            <p className="text-semibold text-lg mb-12" key={i}>{para.text}</p>
+                                        ) : (
+                                            <ul key={i} className="list-disc pl-6 font-semibold space-y-2 text-xl">
+                                                {para.items.map((item, j) => (
+                                                    <li key={j}>{item}</li>
+                                                ))}
+                                            </ul>
+                                        )
+                                    ))}
+                                </div>
+
                             </div>
                         ))}
                     </div>

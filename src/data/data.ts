@@ -189,7 +189,7 @@ export const servicesData: Service[] = [
         ],
       },
       {
-        heading: "Why Choose ByteBuzz?",
+        heading: "Why Choose <span class='text-red-600'>Byte</span><span class='text-indigo-600'>Buzz</span>?",
         content: [
           {
             type: 'list',
@@ -285,7 +285,7 @@ export const servicesData: Service[] = [
         ],
       },
       {
-        heading: "Why Choose ByteBuzz?",
+        heading: "Why Choose <span class='text-red-600'>Byte</span><span class='text-indigo-600'>Buzz</span>?",
         content: [
           {
             type: 'list',
@@ -372,7 +372,7 @@ export const servicesData: Service[] = [
         ],
       },
       {
-        heading: "Why Choose ByteBuzz?",
+        heading: "Why Choose <span class='text-red-600'>Byte</span><span class='text-indigo-600'>Buzz</span>?",
         content: [
           {
             type: 'list',
@@ -458,7 +458,7 @@ export const servicesData: Service[] = [
         ],
       },
       {
-        heading: "Why Choose ByteBuzz?",
+        heading: "Why Choose <span class='text-red-600'>Byte</span><span class='text-indigo-600'>Buzz</span>?",
         content: [
           {
             type: 'list',
@@ -538,7 +538,7 @@ export const servicesData: Service[] = [
         ],
       },
       {
-        heading: "Why Choose ByteBuzz?",
+        heading: "Why Choose <span class='text-red-600'>Byte</span><span class='text-indigo-600'>Buzz</span>?",
         content: [
           {
             type: 'list',
@@ -616,7 +616,7 @@ export const servicesData: Service[] = [
         ],
       },
       {
-        heading: "Why Choose ByteBuzz?",
+        heading: "Why Choose <span class='text-red-600'>Byte</span><span class='text-indigo-600'>Buzz</span>?",
         content: [
           {
             type: 'list',
