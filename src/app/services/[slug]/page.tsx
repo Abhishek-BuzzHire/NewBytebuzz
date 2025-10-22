@@ -41,7 +41,7 @@ const ServicePage = ({ params }: { params: Promise<{ slug: string }> }) => {
                     <h2 className="text-3xl font-semibold tracking-tight md:text-4xl mb-4">
                         {service.subhead}
                     </h2>
-                    <p className="text-foreground text-xl leading-relaxed">
+                    <p className="text-muted-foreground text-xl leading-relaxed">
                         {service.description}
                     </p>
                 </div>
@@ -64,9 +64,9 @@ const ServicePage = ({ params }: { params: Promise<{ slug: string }> }) => {
                                 <div className="space-y-4">
                                     {section.content.map((para, i) => (
                                         para.type === "paragraph" ? (
-                                            <p className="text-semibold text-lg mb-12" key={i}>{para.text}</p>
+                                            <p className="text-muted-foreground text-lg mb-8" key={i}>{para.text}</p>
                                         ) : (
-                                            <ul key={i} className="list-disc pl-6 font-semibold space-y-2 text-xl">
+                                            <ul key={i} className="font-semibold space-y-2 text-xl">
                                                 {para.items.map((item, j) => (
                                                     <li key={j}>{item}</li>
                                                 ))}

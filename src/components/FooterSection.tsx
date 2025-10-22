@@ -63,7 +63,7 @@ const defaultLegalLinks = [
 const FooterSection = ({
     logo = {
         url: "/",
-        src: "/logo.png",
+        src: "/logo.svg",
         alt: "ByteBuzz.in",
         title: "ByteBuzz.in",
     },
@@ -85,14 +85,14 @@ const FooterSection = ({
                                     src={logo.src}
                                     alt={logo.alt}
                                     title={logo.title}
-                                    className="h-12 w-12"
-                                    width={192}
-                                    height={192}
+                                    className="max-w-32"
+                                    width={987}
+                                    height={308}
                                 />
                             </a>
-                            <a href={logo.url}>
+                            {/* <a href={logo.url}>
                                 <h2 className="text-3xl font-semibold"><span className="text-red-600">Byte</span><span className="text-indigo-600">Buzz</span></h2>
-                            </a>
+                            </a> */}
                         </div>
                         <p className="text-muted-foreground max-w-[70%] text-sm">
                             {description}

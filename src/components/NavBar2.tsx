@@ -63,15 +63,15 @@ const NavBar = () => {
                         className="flex items-center gap-2"
                     >
                         <Image
-                            src="/logo.png"
-                            className="max-h-12 max-w-12"
+                            src="/logo.svg"
+                            className="max-w-32"
                             alt="ByteBuzz.in"
-                            width={192}
-                            height={192}
+                            width={987}
+                            height={308}
                         />
-                        <span className="text-3xl font-semibold">
+                        {/* <span className="text-3xl font-semibold">
                             <span className="text-red-600">Byte</span><span className="text-indigo-600">Buzz</span>
-                        </span>
+                        </span> */}
                     </Link>
                     <NavigationMenu className="hidden lg:block">
                         <NavigationMenuList>
@@ -160,11 +160,11 @@ const NavBar = () => {
                                         className="flex items-center gap-2"
                                     >
                                         <Image
-                                            src="/logo.png"
-                                            className="max-h-8 max-w-8"
+                                            src="/logo.svg"
+                                            className="max-w-16"
                                             alt="ByteBuzz.in"
-                                            width={192}
-                                            height={192}
+                                            width={987}
+                                            height={308}
                                         />
                                         <span className="text-xl font-semibold">
                                             <span className="text-red-600">Byte</span><span className="text-indigo-600">Buzz</span>
