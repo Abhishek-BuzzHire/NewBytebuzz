@@ -56,11 +56,15 @@ const ServicePage = ({ params }: { params: Promise<{ slug: string }> }) => {
                     </div>
                 </div>
                 <div className="container mx-auto flex flex-col lg:flex-row lg:justify-between gap-8 py-16 lg:px-12">
-                    <div className="max-w-3xl space-y-8 text-left mb-8">
+                    <div className="relative max-w-3xl space-y-8 text-left mb-8">
+                        <div className="absolute inset-0 -z-10 ">
+                            <div className="absolute bottom-0 left-[30%] size-[400px] rounded-full bg-blue-500/30 blur-[120px]" />
+                            <div className="absolute top-0 left-[10%] size-[250px] rounded-full bg-teal-400/30 blur-[120px]" />
+                        </div>
                         {service.sections.map((section, idx) => (
                             <div key={idx} className="space-y-2 lg:mb-16">
-                                <h2 className="text-3xl font-semibold tracking-tight md:text-4xl mb-8" dangerouslySetInnerHTML={{ __html: section.heading }}/>
-                                    
+                                <h2 className="text-3xl font-semibold tracking-tight md:text-4xl mb-8" dangerouslySetInnerHTML={{ __html: section.heading }} />
+
                                 <div className="space-y-4">
                                     {section.content.map((para, i) => (
                                         para.type === "paragraph" ? (
