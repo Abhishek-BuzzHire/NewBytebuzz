@@ -60,18 +60,15 @@ const NavBar = () => {
                 <nav className="flex items-center justify-between">
                     <Link
                         href="/"
-                        className="flex items-center gap-2"
-                    >
+                        className="">
                         <Image
-                            src="/logo.svg"
-                            className="max-w-32"
+                            src="/logo1.svg"
+                            className="max-w-38"
                             alt="ByteBuzz.in"
-                            width={987}
-                            height={308}
+                            width={981}
+                            height={240}
                         />
-                        {/* <span className="text-3xl font-semibold">
-                            <span className="text-red-600">Byte</span><span className="text-indigo-600">Buzz</span>
-                        </span> */}
+                        <p className="text-[10.5px] text-foreground">Innovation | Creation | Execution</p>
                     </Link>
                     <NavigationMenu className="hidden lg:block">
                         <NavigationMenuList>
@@ -157,18 +154,16 @@ const NavBar = () => {
                                 <SheetTitle>
                                     <Link
                                         href="/"
-                                        className="flex items-center gap-2"
+                                        className=""
                                     >
                                         <Image
-                                            src="/logo.svg"
-                                            className="max-w-16"
+                                            src="/logo1.svg"
+                                            className="max-w-19"
                                             alt="ByteBuzz.in"
-                                            width={987}
-                                            height={308}
+                                            width={981}
+                                            height={240}
                                         />
-                                        <span className="text-xl font-semibold">
-                                            <span className="text-red-600">Byte</span><span className="text-indigo-600">Buzz</span>
-                                        </span>
+                                        <p className="text-[5.1px] text-foreground">Innovation | Creation | Execution</p>
                                     </Link>
                                 </SheetTitle>
                             </SheetHeader>
