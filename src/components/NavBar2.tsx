@@ -60,15 +60,25 @@ const NavBar = () => {
                 <nav className="flex items-center justify-between">
                     <Link
                         href="/"
-                        className="">
+                        className="flex gap-2">
+
                         <Image
-                            src="/logo1.svg"
-                            className="max-w-38"
+                            src="/logo.png"
+                            className="max-w-13"
                             alt="ByteBuzz.in"
-                            width={981}
-                            height={240}
+                            width={192}
+                            height={192}
                         />
-                        <p className="text-[10.5px] text-foreground">Innovation | Creation | Execution</p>
+                        <div>
+                            <Image
+                                src="/logo1.svg"
+                                className="max-w-38"
+                                alt="ByteBuzz.in"
+                                width={981}
+                                height={240}
+                            />
+                            <p className="text-[10.5px] text-foreground">Innovation | Creation | Execution</p>
+                        </div>
                     </Link>
                     <NavigationMenu className="hidden lg:block">
                         <NavigationMenuList>
@@ -154,8 +164,16 @@ const NavBar = () => {
                                 <SheetTitle>
                                     <Link
                                         href="/"
-                                        className=""
+                                        className="flex gap-1"
                                     >
+                                        <Image
+                                            src="/logo.png"
+                                            className="max-w-7"
+                                            alt="ByteBuzz.in"
+                                            width={192}
+                                            height={192}
+                                        />
+                                        <div>
                                         <Image
                                             src="/logo1.svg"
                                             className="max-w-19"
@@ -164,6 +182,7 @@ const NavBar = () => {
                                             height={240}
                                         />
                                         <p className="text-[5.1px] text-foreground">Innovation | Creation | Execution</p>
+                                        </div>
                                     </Link>
                                 </SheetTitle>
                             </SheetHeader>

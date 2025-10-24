@@ -20,7 +20,13 @@ interface HeroProps {
     onScroll?: () => void;
 }
 
-const HeroSection: React.FC<HeroProps> = ({ icon = <Code className="size-6" />,
+const HeroSection: React.FC<HeroProps> = ({ icon = <Image
+    src="/logo.png"
+    className="max-w-12"
+    alt="ByteBuzz.in"
+    width={192}
+    height={192}
+/>,
     heading,
     description,
     button,
@@ -44,7 +50,7 @@ const HeroSection: React.FC<HeroProps> = ({ icon = <Code className="size-6" />,
                                     <div className="size-full rounded-full border"></div>
                                 </div>
                             </div>
-                            <span className="mx-auto flex size-16 items-center justify-center rounded-full border md:size-20">
+                            <span className="mx-auto flex size-16 items-center justify-center rounded-full md:size-20">
                                 {icon}
                             </span>
                             <h2 className="mx-auto max-w-5xl text-center text-3xl font-medium text-balance md:text-5xl">

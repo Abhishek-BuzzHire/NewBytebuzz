@@ -80,7 +80,15 @@ const FooterSection = ({
                     <div className="flex w-full flex-col justify-between gap-6 lg:items-start">
                         {/* Logo */}
                         <div className="flex items-center gap-2 lg:justify-start">
-                            <a href={logo.url}>
+                            <a href={logo.url} className="flex gap-2">
+                                <Image
+                                    src="/logo.png"
+                                    className="max-w-13"
+                                    alt="ByteBuzz.in"
+                                    width={192}
+                                    height={192}
+                                />
+                                <div>
                                 <Image
                                     src={logo.src}
                                     alt={logo.alt}
@@ -89,7 +97,8 @@ const FooterSection = ({
                                     width={987}
                                     height={308}
                                 />
-                                <p className="text-[10.5px] text-center text-foreground">Innovation | Creation | Execution</p>
+                                <p className="text-[10.5px] text-foreground">Innovation | Creation | Execution</p>
+                                </div>
                             </a>
                         </div>
                         <p className="text-muted-foreground max-w-[70%] text-sm">
