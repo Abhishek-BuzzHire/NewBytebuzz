@@ -56,7 +56,7 @@ const ServicePage = ({ params }: { params: Promise<{ slug: string }> }) => {
                     </div>
                 </div>
                 <div className="container mx-auto flex flex-col lg:flex-row lg:justify-between gap-8 py-16 lg:px-12">
-                    <div className="relative max-w-3xl space-y-8 text-left mb-8">
+                    <div className="relative max-w-3xl space-y-8 text-left mb-8 overflow-hidden lg:overflow-visible md:overflow-visible">
                         <div className="absolute inset-0 -z-10 ">
                             <div className="absolute bottom-0 left-[30%] size-[400px] rounded-full bg-blue-500/30 blur-[120px]" />
                             <div className="absolute top-0 left-[10%] size-[250px] rounded-full bg-teal-400/30 blur-[120px]" />

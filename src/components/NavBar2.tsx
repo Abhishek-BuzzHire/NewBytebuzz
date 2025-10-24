@@ -233,7 +233,7 @@ const NavBar = () => {
                                                 <div className="grid md:grid-cols-2">
                                                     {careers.map((career, index) => (
                                                         <Link
-                                                            href={career.href}
+                                                            href={`/careers/${career.href}`}
                                                             key={index}
                                                             className="rounded-md p-3 transition-colors hover:bg-muted/70"
                                                         >
