@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "ByteBuzz",
-  description: "Sample Website",
+  description: "ByteBuzz - India's Best IT Solutions Services",
 };
 
 export default function RootLayout({
