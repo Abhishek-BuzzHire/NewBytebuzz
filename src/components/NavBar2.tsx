@@ -24,6 +24,7 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
+    SheetClose,
 } from "@/components/ui/sheet";
 import { serviceSec } from "@/data/data";
 import { ThemeToggle } from "./ThemeToggle";
@@ -162,6 +163,7 @@ const NavBar = () => {
                         <SheetContent side="top" className="max-h-screen overflow-auto">
                             <SheetHeader>
                                 <SheetTitle>
+                                    <SheetClose asChild>
                                     <Link
                                         href="/"
                                         className="flex gap-1"
@@ -184,17 +186,21 @@ const NavBar = () => {
                                         <p className="text-[5.1px] text-foreground">Innovation | Creation | Execution</p>
                                         </div>
                                     </Link>
+                                    </SheetClose>
                                 </SheetTitle>
                             </SheetHeader>
                             <div className="flex flex-col p-4">
                                 <div className="flex flex-col gap-4">
+                                    <SheetClose asChild>
                                     <Link href="/" className="font-medium">
                                         Home
                                     </Link>
-
+                                        </SheetClose>
+                                        <SheetClose asChild>
                                     <Link href="/about" className="font-medium">
                                         About Us
                                     </Link>
+                                    </SheetClose>
                                 </div>
                                 <div className="flex flex-col">
                                     <Accordion type="single" collapsible className="">
@@ -205,9 +211,9 @@ const NavBar = () => {
                                             <AccordionContent>
                                                 <div className="grid md:grid-cols-2">
                                                     {services.map((service, index) => (
+                                                        <SheetClose asChild key={index}>
                                                         <Link
-                                                            href={`/services/${service.slug}`}
-                                                            key={index}
+                                                            href={`/services/${service.slug}`}                                                            
                                                             className="rounded-md p-3 transition-colors hover:bg-muted/70"
                                                         >
                                                             <div key={service.title}>
@@ -219,6 +225,7 @@ const NavBar = () => {
                                                                 </p>
                                                             </div>
                                                         </Link>
+                                                        </SheetClose>
                                                     ))}
                                                 </div>
                                             </AccordionContent>
@@ -232,9 +239,9 @@ const NavBar = () => {
                                             <AccordionContent>
                                                 <div className="grid md:grid-cols-2">
                                                     {careers.map((career, index) => (
+                                                        <SheetClose asChild key={index}>
                                                         <Link
-                                                            href={`/careers/${career.href}`}
-                                                            key={index}
+                                                            href={`/careers/${career.href}`}                                                            
                                                             className="rounded-md p-3 transition-colors hover:bg-muted/70"
                                                         >
                                                             <div key={career.title}>
@@ -246,6 +253,7 @@ const NavBar = () => {
                                                                 </p>
                                                             </div>
                                                         </Link>
+                                                        </SheetClose>
                                                     ))}
                                                 </div>
                                             </AccordionContent>
@@ -253,9 +261,11 @@ const NavBar = () => {
                                     </Accordion>
                                 </div>
                                 <div className="flex justify-between">
+                                    <SheetClose asChild>
                                     <Link href="/contact" className="cursor-pointer">
                                         <Button>Contact</Button>
                                     </Link>
+                                    </SheetClose>
                                     <ThemeToggle />
                                 </div>
                             </div>
