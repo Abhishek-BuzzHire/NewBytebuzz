@@ -13,7 +13,7 @@ interface Feature {
 
 interface AboutSec {
     heading?: string;
-    description?: string;
+    description: string;
     linkUrl?: string;
     linkText?: string;
     features?: Feature[];
@@ -41,7 +41,7 @@ const AboutSection = React.forwardRef<HTMLDivElement, AboutSec>(({
                     <h2 className="mb-3 text-xl font-semibold md:mb-4 md:text-4xl lg:text-5xl lg:mb-6">
                         {heading}
                     </h2>
-                    <p className="text-muted-foreground mb-8 lg:text-lg">{description}</p>
+                    <p className="text-muted-foreground mb-8 lg:text-lg" dangerouslySetInnerHTML={{ __html: description }}/>
                     <a  
                         onClick={onScroll}
                         className="group flex items-center text-xs font-medium md:text-base lg:text-lg hover:cursor-pointer"

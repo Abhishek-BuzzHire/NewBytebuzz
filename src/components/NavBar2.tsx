@@ -73,7 +73,7 @@ const NavBar = () => {
                         <div>
                             <Image
                                 src="/logo1.svg"
-                                className="max-w-38"
+                                className="max-w-38 mt-1"
                                 alt="ByteBuzz.in"
                                 width={981}
                                 height={240}

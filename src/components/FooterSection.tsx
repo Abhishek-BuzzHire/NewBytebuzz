@@ -93,7 +93,7 @@ const FooterSection = ({
                                     src={logo.src}
                                     alt={logo.alt}
                                     title={logo.title}
-                                    className="max-w-38"
+                                    className="max-w-38 mt-1"
                                     width={987}
                                     height={308}
                                 />
