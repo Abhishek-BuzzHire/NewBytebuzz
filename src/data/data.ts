@@ -749,7 +749,7 @@ export const contactdata: ContactProps[] = [
     icon: Mail,
     label: "Email",
     description: "We respond to all emails within 24 hours.",
-    main: "info@buzzhire.in"
+    main: "info@bytebuzz.in"
   },
   {
     icon: MapPin,
@@ -761,7 +761,7 @@ export const contactdata: ContactProps[] = [
     icon: Phone,
     label: "Phone",
     description: "We're available Mon-Fri, 9am-5pm.",
-    main: "+91 99713 52525"
+    main: "+91 99713 52525, +91 97184 81863"
   },
   {
     icon: MessageCircle,
