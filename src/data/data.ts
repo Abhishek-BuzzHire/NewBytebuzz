@@ -760,7 +760,7 @@ export const contactdata: ContactProps[] = [
   {
     icon: Phone,
     label: "Phone",
-    description: "We're available Mon-Fri, 9am-5pm.",
+    description: "We're available Mon-Fri, 10am-7pm.",
     main: "+91 99713 52525 / +91 97184 81863"
   },
   {
