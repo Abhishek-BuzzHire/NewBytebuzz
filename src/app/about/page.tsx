@@ -7,7 +7,7 @@ const AboutPage = () => {
                 <div className="mb-14 grid gap-5 text-center md:grid-cols-1 md:text-left">
                     <div className="px-8">
                         <h1 className="mb-6 text-4xl font-bold md:text-5xl lg:mb-10 lg:text-6xl text-center">Who <span className="text-primary">We</span> Are.</h1>
-                        <p className="text-lg text-foreground lg:text-xl">ByteBuzz (a unit of BuzzHire Private Limited) was established in September 2025 with a clear mission — to help businesses harness the power of technology in the smartest and most efficient way possible. <br />
+                        <p className="text-lg text-foreground lg:text-xl">ByteBuzz was established in September 2025 with a clear mission — to help businesses harness the power of technology in the smartest and most efficient way possible. <br />
                             At ByteBuzz, we integrate the industry&apos;s best technologies to match each customers unique needs and deliver them as a service, backed by our strong commitment to excellence. <br />
 
                             We believe in creating long-lasting partnerships rather than one-time projects. Our focus is on offering a superior customer experience through transparency, innovation, and reliability in everything we do.

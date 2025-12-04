@@ -42,7 +42,7 @@ const defaultSections = [
         title: "Careers",
         links: [
             { name: "Career at ByteBuzz", href: "bytebuzz" },
-            { name: "Career at BuzzHire", href: "buzzhire" },
+            // { name: "Career at BuzzHire", href: "buzzhire" },
             { name: "Explore Jobs", href: "jobs" },
         ],
     },

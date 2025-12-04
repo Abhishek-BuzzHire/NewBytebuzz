@@ -27,7 +27,7 @@ const HomePage = () => {
             }} />
 
             <AboutSection ref={refs.about} onScroll={()=>handleScroll("service")} heading={"How It All Started"}
-                description={"With over 12 years of experience in search, recruitment, and consulting, and the successful journey of <a target='_blank' href='https://buzzhire.in'><span class='text-red-600'>Buzz</span><span class='text-indigo-600'>Hire</span></a>, we decided to take the next big step forward  venturing into the world of technology. ByteBuzz (a unit of BuzzHire Private Limited) was established with a clear mission: to empower businesses to harness the power of technology in the smartest and most efficient way possible. At ByteBuzz, we combine our deep industry expertise with the best technologies, tailoring solutions to each client's unique needs. Our goal is to deliver seamless, scalable, and future-ready services  driven by our unwavering commitment to quality, innovation, and excellence."}
+                description={"We have decided to take the big step forward venturing into the world of technology. ByteBuzz was established with a clear mission: to empower businesses to harness the power of technology in the smartest and most efficient way possible. At ByteBuzz, we combine our deep industry expertise with the best technologies, tailoring solutions to each client's unique needs. Our goal is to deliver seamless, scalable, and future-ready services  driven by our unwavering commitment to quality, innovation, and excellence."}
                 linkText="See our services"
                 linkUrl=""
             />
